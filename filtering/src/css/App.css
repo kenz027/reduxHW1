@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+html{
+  background-color: #e1e1e1;
+}
+input, p, li{
+  font-family: Arial;
+  font-size:21px;
+}
+button{
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+li{
+  background-color: lightgreen;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding: 10px 0px;
+  border-bottom: 3px solid white;
+}
+li button{
+  border: none;
+  padding: 5px 10px;
+}
+li:nth-child(odd){
+  filter: brightness(90%);
+}
+li button:nth-child(1){
+  background-color: orangered;
+}
+li button:nth-child(2){
+  background-color: red;
+}
+form{
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  margin: 10px;
+}
+form button{
+  background-color: lightgreen;
+  border: none;
+  padding: 0 10px;
+}
+form input{
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid lightgreen;
+}
+.search__label{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
