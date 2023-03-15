@@ -36,7 +36,7 @@ export default function ServiceAdd() {
     e.preventDefault();
     const { name, price } = item;
     const edMode = item.editingMode;
-    if (edMode?.index){
+    if (edMode?.index >= 0){
         dispatch(addServiceChanges(name, price, edMode.index))
     } else {
         dispatch(addService(name, price, edMode))
